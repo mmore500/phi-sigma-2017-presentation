@@ -1,0 +1,51 @@
+\begin{subsection}{Complete System}
+
+\begin{frame}{Complete System}
+\scriptsize
+\centerline{
+\begin{minipage}{\linewidth}
+\begin{align*}
+\frac{d}{dt}
+\begin{pmatrix}
+    \vec{x}_1 \\
+    \vec{v}_1 \\
+    s_1 \\
+    \vdots \\
+    p_1 \\
+    \vdots
+\end{pmatrix}
+= \begin{pmatrix}
+	\vec{v}_1 \\
+    \alpha \hat{\vec{v}}_1 \Big[ \frac{c}{\norm{\vec{v}}} - a \norm{\vec{v}} + \frac{\norm{\vec{v}}^2 - b \vec{v} \cdot \nabla s}{\sqrt{\norm{\vec{v}}^2 + (\vec{v} \cdot \nabla s)^2}} \Big] + \beta_{\vec{x}} \frac{\vec{a} - \vec{x}_1}{\norm{\vec{a} - \vec{x}_1}} + \hat{\vec{v}}_{1\perp}(L_1 - R_1) + \gamma_{\vec{x}} \hat{\vec{v}}_{\perp} \Big( \hat{\vec{v}}_{\perp} \cdot \frac{\vec{a} - \vec{x}}{\norm{\vec{a} - \vec{x}}} \Big) \\
+    \norm{\vec{v}_1} \\
+    \vdots \\
+    \kappa f(p_1, \vec{x}_1,\hdots,\vec{x}_n) + \lambda p_1 \\
+    \vdots
+\end{pmatrix}
+\end{align*}
+\end{minipage}
+}
+\normalsize
+~\\
+~\\
+events:
+\vspace{-2ex}
+\begin{itemize}
+\item out of bounds $\rightarrow$ reflect heading to ``bounce'' ant
+\item $s > s_{\operatorname{thresh}}$ $\rightarrow$ $s = 0$, $s_{\operatorname{thresh}} = \bm{X} + c_3 \frac{|\vec{s} \cdot \vec{v}|}{\norm{\vec{v}}}$, random reorientation event with gradient alignment bias
+\item close to food/nest $\rightarrow$ switch forager/returner role
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Animation}
+	\begin{figure}
+		\begin{center}
+		\includemedia[width=\linewidth,height=0.6\textwidth, flashvars={scaleMode=zoom}]{}{http://www.youtube.com/v/YO6So6tgGVg?rel=0&amp;showinfo=0}
+		\end{center}
+		\caption{\href{http://www.youtube.com/v/YO6So6tgGVg?rel=0&amp;showinfo=0}{Animation of numerically-approximated solution}}
+	\end{figure}
+\end{frame}
+
+
+\end{subsection}

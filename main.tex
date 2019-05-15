@@ -1,0 +1,80 @@
+%\title{Phi Sigma Symposium Presentation}
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage[export]{adjustbox}
+
+\usepackage{graphicx}
+\usepackage{sidecap}
+\sidecaptionvpos{figure}{c}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{multimedia}
+\usepackage{media9}
+
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{setspace}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\title{Modeling the Collective \\ Behavior of Ants on Uneven Terrain}
+\subtitle{Phi Sigma Undergraduate Research Symposium}
+\date{April 1st, 2017}
+\author{Matthew Moreno$^{1}$, Dr. Jason Graham$^{2}$, Dr. Simon Garnier$^{3}$} % Author(s)
+
+\institute{$^{1}$University of Puget Sound \\ [0.5ex]
+		   $^{2}$University of Scranton \\ [0.5ex]
+           $^{3}$New Jersey Institute of Technology }
+
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{images/mbiwtext}}
+
+\begin{document}
+
+\maketitle
+
+% \begin{frame}{Overview}
+%   \setbeamertemplate{section in toc}[sections numbered]
+%   \tableofcontents
+% \end{frame}
+
+\section{Introduction}
+
+\input{tex/motivation.tex}
+
+\input{tex/background.tex}
+
+\input{tex/researchquestion.tex}
+
+\section{Approach}
+
+\input{tex/experimentaldesignmodelingobjectives.tex}
+
+\input{tex/events.tex}
+
+\input{tex/completesystem.tex}
+
+\input{tex/results.tex}
+
+\input{tex/acknowledgementsquestions.tex}
+
+\appendix
+
+\input{tex/appendix.tex}
+
+\input{tex/backup.tex}
+
+\end{document}
